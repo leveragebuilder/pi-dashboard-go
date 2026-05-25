@@ -1,0 +1,17 @@
+[Unit]
+Description=Pi Dashboard Go
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/pi-dashboard-go
+Environment=PI_DASHBOARD_ADDR=:80
+Environment=PI_DASHBOARD_REFRESH_SECONDS=5
+ExecStart=/opt/pi-dashboard-go/pi-dashboard-go
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
