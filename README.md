@@ -1,6 +1,6 @@
 # Pi Dashboard Go
 
-Minimal Raspberry Pi dashboard as a single Go binary.
+Minimal Lightweight Raspberry Pi dashboard as a single Go binary.
 
 Features:
 - temperature
@@ -10,8 +10,6 @@ Features:
 - top RAM processes
 - top CPU processes
 - kill processes from the browser
-
-No database, no framework, no frontend build step.
 
 ## Run locally
 
